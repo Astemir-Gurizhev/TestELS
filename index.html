@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <link rel="stylesheet" href="css/style.css"/>
+   <link rel="stylesheet" href="css/media.css"/>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width">
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+   <title>Test_ELS</title>
+</head>
+
+<body id="body">
+   <div class="wrapper">
+      <div class="content">
+         <main class="main">
+            <section class="about">
+               <div class="container">
+                  <h2 class="about__title title"> 
+                     О компании
+                  </h2>
+                  <div class="about__row">
+                     <div class="about__logo">
+                        <img src="img/about/logo.svg" alt="">
+                     </div>
+                     <p class="about__text">
+                        Европейская Юридическая Служба была основана в 2007 году, создав на рынке новую товарную категорию круглосуточной дистанционной юридической поддержки. Компания стала первой, предложившей рынку онлайн услугу юридической профилактики по всем видам права.
+                     </p>
+                  </div>
+                  <div class="about__slider swiper-container">
+                     <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-slide1">
+                           <div class="swiper-slide__number">
+                              15 000
+                           </div>
+                           <div class="swiper-slide__text">
+                              точек продаж
+                           </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide2">
+                           <div class="swiper-slide__number">
+                              8
+                           </div>
+                           <div class="swiper-slide__text">
+                              стран присутствия сервиса
+                           </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide3">
+                           <div class="swiper-slide__number">
+                              4 500 000
+                           </div>
+                           <div class="swiper-slide__text">
+                              консультаций
+                           </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide4">
+                           <div class="swiper-slide__number">
+                              3 000 000
+                           </div>
+                           <div class="swiper-slide__text">
+                              пользователей
+                           </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide5">
+                           <div class="swiper-slide__number">
+                              150
+                           </div>
+                           <div class="swiper-slide__text">
+                              корпоративных партнеров
+                           </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide6">
+                           <div class="swiper-slide__number">
+                              2007
+                           </div>
+                           <div class="swiper-slide__text">
+                              год основания
+                           </div>
+                        </div>
+                     </div>
+                     <div class="about__slider__buttons">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                     </div>
+                     
+                  </div>
+                  
+               </div>
+            </section>
+
+            <section class="send">
+               <div class="container">
+                  <div class="send__row">
+                     <div class="send-left">
+                        <div class="send-left__img">
+                           <img src="img/send/1.png" alt="">
+                        </div>
+                        <div class="send-left__text">
+                           <p>
+                              Уже есть бизнес? <br/> Откройте счет прямо сейчас!
+                           </p>
+                        </div>
+                     </div>
+                     <div class="send-right">
+                        <form action="#" class="send-right__form">
+                           <div class="send-right__form__title">
+                              Оставьте заявку на открытие счёта, и специалист банка «ВТБ» свяжется с Вами в самое ближайшее время
+                           </div>
+                           <div class="send-right__form__required">
+                              <div class="send-right__form-group cont">
+                                 <input type="text" data-rule="name" id="inputid1" class="send-right__form__input form-control" required oninvalid="this.setCustomValidity(' ')" oninput="setCustomValidity('')">
+                                 <div class="placeholder">Наименование заявителя <span class="red">*</span></div>
+                                 <span id="error1" class="error" aria-live=""></span>
+                              </div>
+                              
+                              <div class="send-right__form-group cont">
+                                 <input type="text" data-rule="contact" id="inputid2" class="send-right__form__input form-control" required oninvalid="this.setCustomValidity(' ')" oninput="setCustomValidity('')">
+                                 <div class="placeholder">Контактное лицо <span class="red">*</span></div>
+                                 <span id="error2" class="error" aria-live=""></span>
+                              </div>
+                        
+                              <div class="send-right__form-group cont">
+                                 <input type="tel" data-rule="phone" id="inputid3" class="send-right__form__input form-control" required oninvalid="this.setCustomValidity(' ')" oninput="setCustomValidity('')">
+                                 <div class="placeholder">Телефон <span class="red">*</span></div>
+                                 <p class="send-right__form__p-format">Просьба указать телефон с кодом города. В формате: (код города) номер телефона</p>
+                                 <span id="error3" class="error" aria-live=""></span>
+                              </div>
+                           </div>
+                           <div class="send-right__form__checkbox">
+                              <input class="send-right__form__input-checkbox" id="checkbox_1" type="checkbox" required>
+                              <label for="checkbox_1" class="send-right__form__label-checkbox">Оставляя заявку, вы принимаете условия Пользовательского соглашения и Политики конфиденциальности.</label>
+                              <!--<span id="error4" class="error" aria-live=""></span>-->
+                           </div>
+                           <button type="submit" id="btn" class="send-right__form__btn">Оставить заявку</button>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </main>
+      </div>
+   </div>
+
+   <!-- SWIPER -->
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   <script src="js/script.js"></script>
+</body>
+
+</html>
